@@ -55,6 +55,8 @@ export class PreviewComponent implements OnInit {
   userPrefLanguageDir = "";
   isNavigateToDemographic = false;
   dataLoaded = false;
+  canDeactivateFlag = true;
+  userPreferredLangCode = localStorage.getItem("userPrefLanguage");
   constructor(
     public dialog: MatDialog,
     private dataStorageService: DataStorageService,
@@ -675,4 +677,7 @@ export class PreviewComponent implements OnInit {
     url = url + `/${this.preRegId}/pick-center`;
     this.router.navigateByUrl(url);
   }
+  navigateDashboard() {
+          this.canDeactivateFlag = false;
+          this.router.navigate([`${this.userPreferredLangCode}/dashboard`]);}
 }

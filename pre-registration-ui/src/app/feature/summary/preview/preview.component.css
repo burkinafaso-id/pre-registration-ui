@@ -45,19 +45,25 @@ header {
 }
 
 .preview__header {
-  margin: 0px 2rem 20px 2rem;
+   /* margin: 0px 2rem 20px 2rem;
   padding: 20px 0rem;
-  border-bottom: 1px solid #ff4081;
+   border-bottom: 1px solid #ff4081;
   font-weight: bold;
-  color: #ff4081;
+  color: #ff4081; */
+   padding: 10px 1rem;
+    width : 100%;
+    font-weight: bold;
+    color: #ff4081;
+   /* border-bottom: 1px solid #ff4081;*/
+    border-bottom: 2px dotted #e6e6e6;
 }
-/* 
-.preview__header {
+
+/*.preview__header {
   padding: 0;
   margin-top: 10px;
   font-weight: bold;
   color: #ff4081;
-} */
+}*/
 
 .preview__header-container {
   padding: 0;
